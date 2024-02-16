@@ -2,13 +2,14 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: root
+  namespace: argocd
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
   project: default
   source:
     repoURL: https://github.com/j6nca/k8s-sandbox.git
-    path: helm/argo-cd/bootstrap
+    path: gitops/argo-cd/bootstrap
     targetRevision: HEAD
   destination:
     server: https://kubernetes.default.svc
