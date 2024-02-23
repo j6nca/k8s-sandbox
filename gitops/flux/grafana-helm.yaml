@@ -9,7 +9,7 @@ spec:
       chart: grafana
       sourceRef:
         kind: GitRepository
-        name: my-charts
+        name: j6nca-charts
         namespace: flux-system
       version: 7.3.2
   interval: 1m0s
