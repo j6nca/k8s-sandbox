@@ -1,8 +1,13 @@
-apiVersion: source.toolkit.fluxcd.io/v1beta2
-kind: HelmRepository
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
 metadata:
-  name: my-charts
+  name: j6nca-charts
   namespace: flux-system
 spec:
-  interval: 1m0s
-  url: ../../helm
+  interval: 1m
+  url: https://github.com/j6nca/k8s-sandbox
+  ref:
+    branch: main
+  ignore: |
+    !/helm/
+
