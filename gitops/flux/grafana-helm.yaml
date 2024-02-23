@@ -6,7 +6,7 @@ metadata:
 spec:
   chart:
     spec:
-      chart: helm/grafana
+      chart: charts/grafana
       sourceRef:
         kind: GitRepository
         name: j6nca-charts
