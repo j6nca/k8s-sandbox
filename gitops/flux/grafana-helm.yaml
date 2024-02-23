@@ -10,6 +10,6 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: my-charts
-				namespace: flux-system
+        namespace: flux-system
       version: 7.3.2
   interval: 1m0s
