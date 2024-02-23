@@ -8,7 +8,7 @@ spec:
     env: "local"
   providerRef:
     name: discord
-  eventSeverity: info
+  eventSeverity: error
   eventSources:
     - kind: GitRepository
       name: '*'
