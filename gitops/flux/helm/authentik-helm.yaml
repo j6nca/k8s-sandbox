@@ -1,15 +1,15 @@
 apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
-  name: kube-prometheus-stack
-  namespace: monitoring
+  name: external-secrets
+  namespace: tools
 spec:
   chart:
     spec:
-      chart: charts/kube-prometheus-stack
+      chart: charts/authentik
       sourceRef:
         kind: GitRepository
         name: j6nca-charts
         namespace: flux-system
-      version: 56.9.0
+      version: 2024.2.1
   interval: 1m0s
